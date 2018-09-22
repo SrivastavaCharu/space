@@ -1,0 +1,18 @@
+from collections import Counter
+n=input('Enter total number of inputs')
+n=int(n)
+N=input('Enter total number of tweets')
+N=int(N)
+
+print('Enter tweets')
+l=[]
+c=0
+while(N!=0):
+    a,b = input('Enter name and tweet index in <NAME tweet_id_N> format').split(maxsplit=1)
+    N=N-1
+    l.append(a)
+    
+x,y=Counter(l).most_common()
+print(x,y)
+
+
